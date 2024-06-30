@@ -4219,7 +4219,7 @@ message BlackInfo {
 }
 
 message LNAPBOJEOLH {
-	enum avatar_type = 1;
+	AvatarType avatar_type = 1;
 	uint32 id = 2;
 }
 
@@ -4249,7 +4249,7 @@ message FeatureSwitchParam {
 }
 
 message FeatureSwitchInfo {
-	enum type = 1;
+	FeatureSwitchType type = 1;
 	repeated FeatureSwitchParam switch_list = 2;
 	bool IsAllClosed = 3;
 }
@@ -4266,7 +4266,7 @@ message GBAMNAPGHFF {
 
 message CKMFNDFODKC {
 	uint64 GIAAKJJAMFK = 1;
-	enum KFHJMGKBFIE = 2;
+	ReplayType KFHJMGKBFIE = 2;
 	uint32 stage_id = 3;
 	uint32 uid = 4;
 	string nickname = 5;
@@ -4311,7 +4311,7 @@ message OCNJNNJAMCG {
 	int64 FADGPBGDLBG = 5;
 	uint32 left_hp = 6;
 	uint32 MCPLHCCOHAH = 7;
-	enum NGFEEBAEKAM = 8;
+	PunkLordShareType NGFEEBAEKAM = 8;
 	bool KNACMDEJFAF = 9;
 }
 
@@ -4407,7 +4407,7 @@ message PFNDMOJJMEC {
 }
 
 message BattleAvatar {
-	enum avatar_type = 1;
+	AvatarType avatar_type = 1;
 	uint32 id = 2;
 	uint32 level = 3;
 	uint32 rank = 4;
@@ -4507,7 +4507,7 @@ message NFHFIPIOOCB {
 	uint32 index = 2;
 	uint32 promotion = 3;
 	uint32 BPAHBFDHNIK = 4;
-	enum KBIIKJHMCLJ = 5;
+	BOKJGICLIPI KBIIKJHMCLJ = 5;
 	SpProgress sp = 6;
 }
 
@@ -4576,8 +4576,8 @@ message BattleReplay {
 	uint32 maze_plane_id = 7;
 	uint32 extra_ability_list = 8;
 	bool is_ai_consider_ultra_skill = 9;
-	enum check_strategy = 10;
-	enum battle_module_type = 11;
+	BattleCheckStrategyType check_strategy = 10;
+	BattleModuleType battle_module_type = 11;
 	repeated FOOFENJCLPI MKMGHEFLFDC = 12;
 	uint32 HOFFCBLNFNG = 14;
 	GamecoreConfig IFMHGJCEJLJ = 15;
@@ -4641,7 +4641,7 @@ message LGFHLDHBDFM {
 }
 
 message AvatarBattleInfo {
-	enum avatar_type = 1;
+	AvatarType avatar_type = 1;
 	uint32 id = 2;
 	uint32 avatar_level = 3;
 	uint32 avatar_rank = 4;
@@ -4723,18 +4723,18 @@ message MonsterBattleInfo {
 	uint32 stage_type = 17;
 	double total_break_damage_taken = 18;
 	double delay_cumulate = 19;
-	enum death_source = 20;
+	DeathSource death_source = 20;
 	uint32 wave = 21;
 	int32 index_in_wave = 22;
 	uint32 phase = 23;
 	uint32 max_phase = 24;
-	enum battle_tag = 25;
+	BattleTag battle_tag = 25;
 	repeated LGJAJMEHHID OHLDFLFFDAA = 26;
 	uint32 EAMKAKODOME = 27;
 	repeated CMDKKBMJPGP KEGOHOLLDCD = 28;
 	uint32 DMNFJCOIPCH = 29;
 	uint32 FPFDDEFFPPG = 30;
-	enum APDDNOACIMG = 31;
+	DIKEHIIKNII APDDNOACIMG = 31;
 }
 
 message PMKPMIFNFBC {
@@ -4777,7 +4777,7 @@ message EDMLINEHPPE {
 }
 
 message IGOJKPCDFNN {
-	enum EEOLCCFMJFF = 1;
+	JAPMFPGNPEF EEOLCCFMJFF = 1;
 	uint32 FEPOOKDILKO = 2;
 	uint32 FJOJLFMCPKP = 3;
 }
@@ -4897,7 +4897,7 @@ message BattleStatistics {
 	repeated CustomValuesEntry custom_values = 13;
 	uint32 challenge_score = 14;
 	repeated FOOFENJCLPI PJOECEPBPOJ = 16;
-	enum JDBPNIHHCDK = 19;
+	BattleEndReason JDBPNIHHCDK = 19;
 	repeated LGFELGLKHJB OIPOMFPKFIE = 21;
 	int32 DENNDAGNJNN = 22;
 	repeated EDMLINEHPPE CGOHELIDBBC = 23;
@@ -4919,7 +4919,7 @@ message MFBFMKMABAO {
 }
 
 message CKLPMMEKCDF {
-	enum EEOLCCFMJFF = 1;
+	BOKJGICLIPI EEOLCCFMJFF = 1;
 	uint32 id = 2;
 	SpProgress sp = 3;
 }
@@ -4931,8 +4931,8 @@ message HeroPath {
 }
 
 message BattleResult {
-	enum retcode = 1;
-	enum end_status = 2;
+	BattleCheckResultType retcode = 1;
+	BattleEndStatus end_status = 2;
 	BattleStatistics stt = 3;
 	string game_core_log_encode = 4;
 	repeated TagsEntry tags = 5;
@@ -4955,15 +4955,15 @@ message IBIGJKBJNJH {
 	uint32 level = 2;
 	string nickname = 3;
 	uint32 IHPLGEBKNAD = 4;
-	enum platform = 5;
+	PlatformType platform = 5;
 	string OPIACEKOANJ = 6;
 	string HJKKDCOAOHG = 7;
 	uint64 version = 8;
 }
 
 message IIMOMGBBADM {
-	enum JDIODALOMDC = 1;
-	enum status = 2;
+	CGDIIHJICCK JDIODALOMDC = 1;
+	IGNGFHOJMIA status = 2;
 }
 
 message LIHLCOGDOEB {
@@ -5000,14 +5000,14 @@ message HLEMBLOIKAM {
 
 message PEGAEGMBJBI {
 	uint64 PIJCPMAPJJG = 1;
-	enum DLLFEHIFKPI = 2;
+	HCKIOAEMKEE DLLFEHIFKPI = 2;
 }
 
 message KGFLEOHJHML {
 	uint64 id = 1;
-	enum GMBEAMHBGPE = 2;
+	HCKIOAEMKEE GMBEAMHBGPE = 2;
 	repeated NJMGIJBHCPE OIFAJBEBHKJ = 3;
-	enum EEOLCCFMJFF = 4;
+	BNHPKNKIHAL EEOLCCFMJFF = 4;
 	uint64 FHJDKADEFBF = 5;
 	uint64 ECDOMKJJPBF = 6;
 	uint32 HPBNJIPNBIA = 7;
@@ -5111,7 +5111,7 @@ message OMNPLFKJDLI {
 
 message ILHEKADILJO {
 	uint32 PODJNCHJCIK = 10;
-	enum status = 4;
+	PCEGPGNGKHN status = 4;
 }
 
 message DNECLCJJKLB {
@@ -5511,7 +5511,7 @@ message IJEHCICEPJH {
 
 message NABCIIFFDCE {
 	uint32 HIJDBKAPIFE = 6;
-	enum state = 10;
+	OGAOBHGMLBH state = 10;
 	uint32 event_id = 14;
 }
 
@@ -5752,7 +5752,7 @@ message LNECKDGALMN {
 message ICLBEPINAIP {
 	ItemList ADKJIIANOOM = 15;
 	bool FHFIGBKCGIF = 9;
-	enum PBHPBJHMGPI = 7;
+	AddAvatarSrc PBHPBJHMGPI = 7;
 	uint32 base_avatar_id = 2;
 }
 
@@ -5835,7 +5835,7 @@ message PVEBattleResultCsReq {
 	uint32 AJDGHADCPGM = 7;
 	BattleStatistics stt = 5;
 	repeated BattleOp op_list = 8;
-	enum end_status = 9;
+	BattleEndStatus end_status = 9;
 	bool HNAFEOKONDB = 15;
 	bool is_auto_fight = 1;
 	uint32 KEAPPFOFEJI = 2;
@@ -5863,13 +5863,13 @@ message PVEBattleResultScRsp {
 	uint32 battle_id = 10;
 	uint32 mismatch_turn_count = 2;
 	string BIJCMDFOJML = 15;
-	enum end_status = 7;
+	BattleEndStatus end_status = 7;
 	uint32 IAFPGFMHPCJ = 13;
 	uint32 stage_id = 4;
 }
 
 message NGDOPKBJHFG {
-	enum COEMOEECAEM = 8;
+	OICCDGCAPKG COEMOEECAEM = 8;
 	BattleStatistics stt = 6;
 }
 
@@ -5881,7 +5881,7 @@ message GPHIBADFPAE {
 }
 
 message BKFMHBCPJJO {
-	enum LPNDBCIPNMF = 1;
+	BattleEndStatus LPNDBCIPNMF = 1;
 	uint32 IEHJLCMNKBB = 4;
 	uint32 retcode = 3;
 	GFOBLINGFBL ABBCICNNNJH = 10;
@@ -5917,7 +5917,7 @@ message PFNKBCDFMAN {
 
 message OKCEBKJGEIG {
 	BattleStatistics stt = 11;
-	enum COEMOEECAEM = 6;
+	OICCDGCAPKG COEMOEECAEM = 6;
 }
 
 message LOGFHDOKODE {
@@ -5946,7 +5946,7 @@ message ANNIDKMLELB {
 }
 
 message ANJBDEIOKJA {
-	enum BDAOALGKNBK = 5;
+	OFMFCLIFILH BDAOALGKNBK = 5;
 	uint64 GIOMIAJHILJ = 15;
 	uint32 exp = 12;
 	uint32 PCMOMDCFGOJ = 1;
@@ -5964,7 +5964,7 @@ message ANJBDEIOKJA {
 message FFCLAIFDAIG {
 	uint32 IDONMCFMCBE = 12;
 	uint32 level = 1;
-	enum EEOLCCFMJFF = 9;
+	HEFEKEALDNH EEOLCCFMJFF = 9;
 }
 
 message FMOGHNEDKJH {
@@ -5996,7 +5996,7 @@ message NEOMNAJEOFG {
 
 message IAIGAHOCLKG {
 	uint32 avatar_id = 2;
-	enum avatar_type = 8;
+	AvatarType avatar_type = 8;
 }
 
 message OBIOGLAJFGC {
@@ -6022,7 +6022,7 @@ message JBBDDKHPFGM {
 
 message EFBOFLCJAEL {
 	uint32 avatar_id = 5;
-	enum avatar_type = 12;
+	AvatarType avatar_type = 12;
 }
 
 message HBADDAHPPGJ {
@@ -6212,10 +6212,10 @@ message IMEEDKGJKDB {
 
 message GKCKOMDIFLP {
 	uint32 FDDOLEGBPHH = 3;
-	enum status = 13;
+	ChallengeStatus status = 13;
 	IMEEDKGJKDB GKGOKJJGINE = 9;
 	uint32 LAKPOEKFOFH = 12;
-	enum extra_lineup_type = 7;
+	ExtraLineupType extra_lineup_type = 7;
 	uint32 LGNHDNODOLM = 5;
 	uint32 BJFIGLMOGLF = 14;
 	repeated BCBMBCACCLM POJIKOANPIA = 15;
@@ -6232,7 +6232,7 @@ message EIHGNFHADKC {
 }
 
 message GDAPGCLGBNA {
-	enum extra_lineup_type = 13;
+	ExtraLineupType extra_lineup_type = 13;
 }
 
 message MHPGCNGNAKG {
@@ -6296,7 +6296,7 @@ message NCINPBMHNOF {
 
 message BHIAOADAHKE {
 	uint32 id = 8;
-	enum avatar_type = 13;
+	AvatarType avatar_type = 13;
 	uint32 index = 12;
 	uint32 level = 3;
 }
@@ -6385,11 +6385,11 @@ message EHFKHFOGLFJ {
 
 message IFEPFGCCDJA {
 	string IIKPKOKNIAL = 7;
-	enum OJEPBCFEFAG = 8;
+	MsgType OJEPBCFEFAG = 8;
 	JDKPHOFLFEN ENLMBCCJFBG = 10;
 	uint32 HFCGMKLFDDJ = 12;
 	uint32 FGDNCHDLNID = 11;
-	enum LDKCHACMPJI = 3;
+	ChatType LDKCHACMPJI = 3;
 }
 
 message MODDDBGKIKO {
@@ -6403,14 +6403,14 @@ message IIBLKIBAAFA {
 	uint64 FADGPBGDLBG = 13;
 	uint32 IJIDAJHNCLN = 5;
 	JDKPHOFLFEN ENLMBCCJFBG = 8;
-	enum OJEPBCFEFAG = 15;
+	MsgType OJEPBCFEFAG = 15;
 }
 
 message DCLGNNHEBJJ {
-	enum OJEPBCFEFAG = 11;
+	MsgType OJEPBCFEFAG = 11;
 	JDKPHOFLFEN ENLMBCCJFBG = 14;
 	uint32 BIEPMPDIGIA = 4;
-	enum LDKCHACMPJI = 6;
+	ChatType LDKCHACMPJI = 6;
 	uint32 HFCGMKLFDDJ = 8;
 	string IIKPKOKNIAL = 10;
 	uint32 LGFCOHDOIBH = 7;
@@ -6505,7 +6505,7 @@ message CPDJJKDEKCN {
 	uint32 KDGGOKGJLMC = 11;
 	uint32 CLDNFIJILNP = 1633;
 	uint32 CHDONICFGKA = 3;
-	enum NJHNLLEOFJL = 12;
+	MDKFCMBNFGK NJHNLLEOFJL = 12;
 	FEFBDIHENLC DEGKBGPPNMA = 617;
 	GOOFAJHLCEE KGIEPAEIBHK = 1741;
 	ICNMLEMMHKL AMDLOMOGEOE = 263;
@@ -6514,7 +6514,7 @@ message CPDJJKDEKCN {
 	int32 NHFELECMHIN = 944;
 	uint32 DCFMPLEEGBL = 2;
 	uint32 GFAMOOMGEMB = 14;
-	enum BBOOMNACLEC = 9;
+	NAJBNNGJKPA BBOOMNACLEC = 9;
 	uint32 OGIABIHLLCD = 4;
 	bool KMFBBBGKGHC = 162;
 }
@@ -6572,10 +6572,10 @@ message MLAIBNAKIJG {
 	uint32 DPBEHOGNBOO = 1;
 	bool JEHEAOINGMP = 14;
 	uint32 id = 6;
-	enum PNCAKMFAOHI = 9;
+	NLFCJLEEOLJ PNCAKMFAOHI = 9;
 	PJPEFALOGHD GKGOKJJGINE = 12;
 	uint32 BICGKJHDPNJ = 8;
-	enum IHMBEENNCMC = 2;
+	BAKDCEGIGBP IHMBEENNCMC = 2;
 	uint32 GKAPPNGOCNB = 11;
 	uint32 LOPNFDJHCLN = 4;
 }
@@ -6599,7 +6599,7 @@ message JDIPIHPMEKN {
 }
 
 message IKMDMKBJGHC {
-	enum JACOFFFKKEI = 13;
+	NLFCJLEEOLJ JACOFFFKKEI = 13;
 	JDIPIHPMEKN OJNCMJDAABJ = 1;
 	uint32 MDFENJLDCJP = 10;
 	JOPFOOBHBFJ JNAOCDNDNBC = 2;
@@ -6705,7 +6705,7 @@ message NMEKJAINPPG {
 }
 
 message HKBGCJKCNAN {
-	enum PMDBOGBOBDD = 14;
+	EMNLDJGMBCA PMDBOGBOBDD = 14;
 	uint32 LEBECEFMDJN = 1129;
 	LineupInfo AKAFAPOJALN = 10;
 	BBLNDEMIPMI DNNNDJCADJE = 7;
@@ -6925,8 +6925,8 @@ message KEKEIPFDIDO {
 }
 
 message EOELNIAHIJB {
-	enum NLEFHGHGKPE = 7;
-	enum KAPEOLCJMMB = 12;
+	BAELJKMHLBH NLEFHGHGKPE = 7;
+	NMCODCECJMC KAPEOLCJMMB = 12;
 }
 
 message KNDJPIGFFCE {
@@ -7036,9 +7036,9 @@ message HCHKJOLENKH {
 }
 
 message AJLAHGEBBME {
-	enum IOHHPEKLGOM = 8;
+	ILKJJKFPFHC IOHHPEKLGOM = 8;
 	uint32 NEIACCEIMGB = 2;
-	enum NLEFHGHGKPE = 7;
+	PCHMJNLPBGF NLEFHGHGKPE = 7;
 	repeated MLAIBNAKIJG AJLKHOKKMAO = 13;
 }
 
@@ -7117,7 +7117,7 @@ message FKLAGHABJGD {
 }
 
 message OJCHAJDDAPD {
-	enum status = 4;
+	PIJHHJMCMGL status = 4;
 	uint32 ILBOMEBLAEH = 8;
 }
 
@@ -7191,7 +7191,7 @@ message FEFBDIHENLC {
 
 message LJPHJBEADBB {
 	repeated MLKDHOECNFLEntry MLKDHOECNFL = 9;
-	enum JLGMMLNNDHH = 7;
+	NEKIHOHLNFP JLGMMLNNDHH = 7;
 	uint32 LLENHCMIDMP = 5;
 	repeated FEFBDIHENLC IMDDNCCBPCM = 15;
 }
@@ -7421,7 +7421,7 @@ message MHKEOFMDGLE {
 
 message AIKFIBAJHID {
 	uint32 retcode = 9;
-	enum CALNDLDIAOP = 4;
+	PBLABLACIPO CALNDLDIAOP = 4;
 	uint32 BFAJJLLGCEE = 11;
 	uint32 EFHFCMKAKAA = 5;
 	SceneBattleInfo battle_info = 1;
@@ -7589,7 +7589,7 @@ message GFOBLINGFBL {
 }
 
 message MBPEFDFDAHO {
-	enum avatar_type = 8;
+	AvatarType avatar_type = 8;
 	uint32 IJEHMBPEHCM = 3;
 	uint32 id = 14;
 }
@@ -7604,7 +7604,7 @@ message COKFGKFKELO {
 
 message FIEDMJCNIKO {
 	uint32 GMIGBLFHHAO = 8;
-	enum status = 7;
+	KLKCMAPNOGA status = 7;
 }
 
 message CHAAMEOKIFJ {
@@ -7765,7 +7765,7 @@ message HBIJMGLJOPO {
 
 message EvolveBuildAvatar {
 	double damage = 1;
-	enum avatar_type = 11;
+	AvatarType avatar_type = 11;
 	uint32 avatar_id = 10;
 }
 
@@ -7863,7 +7863,7 @@ message EvolveBuildFinishScNotify {
 	EvolveBuildLevelInfo level_info = 7;
 	uint32 level_id = 15;
 	uint32 coin = 8;
-	enum battle_result_type = 10;
+	GADPGIMLECD battle_result_type = 10;
 	uint32 exp = 12;
 	uint32 cur_period_type = 5;
 }
@@ -8073,7 +8073,7 @@ message KKPIIAGGIEG {
 }
 
 message PNEGOPHLMGB {
-	enum avatar_type = 14;
+	AvatarType avatar_type = 14;
 	uint32 avatar_id = 15;
 }
 
@@ -8099,7 +8099,7 @@ message KOHPDDFIBDD {
 
 message LBFIDJMLMLA {
 	uint32 IKCHDHJGMOP = 13;
-	enum LKLGDCJGILM = 4;
+	NEHPFBIGJCP LKLGDCJGILM = 4;
 	uint32 HIMGBPFDJHG = 12;
 }
 
@@ -8115,7 +8115,7 @@ message HAKDEPGCKPN {
 	uint32 NENNPJOJIEC = 7;
 	uint32 FBDAIIAOLLB = 5;
 	uint32 id = 1;
-	enum HADGLJEDCNB = 2;
+	NEHPFBIGJCP HADGLJEDCNB = 2;
 }
 
 message BHCNIGIKHMN {
@@ -8155,7 +8155,7 @@ message IJPKPLBIMBO {
 }
 
 message BEPLKGCNFGN {
-	enum kick_type = 10;
+	HBENCPAFOHF kick_type = 10;
 }
 
 message LMOGHNNLAHO {
@@ -8196,7 +8196,7 @@ message JPPIMIMKMGC {
 }
 
 message KIECHAAODIJ {
-	enum avatar_type = 8;
+	AvatarType avatar_type = 8;
 	uint32 avatar_id = 13;
 }
 
@@ -8229,7 +8229,7 @@ message MEGFBEGDECD {
 
 message EPCNFMPDMLO {
 	uint32 rank = 13;
-	enum state = 11;
+	FMBMMKCIELK state = 11;
 	uint32 FDDOLEGBPHH = 7;
 	uint32 hp = 4;
 	bool HFCHFEFONNL = 15;
@@ -8240,7 +8240,7 @@ message EPCNFMPDMLO {
 
 message HPCDLEMPBEK {
 	OHHLGOFKBNO JKKAEELLABE = 12;
-	enum AEHDIJLHCKM = 3;
+	DONOGLEODAJ AEHDIJLHCKM = 3;
 	int32 DEDFKCPPGDI = 7;
 	uint32 IBJADECBJOF = 10;
 	repeated EPCNFMPDMLO OFBOHPBIFEE = 6;
@@ -8254,7 +8254,7 @@ message AADPPEPJHLE {
 }
 
 message OHHLGOFKBNO {
-	enum IDLKOMOAIPL = 12;
+	FMBMMKCIELK IDLKOMOAIPL = 12;
 	uint32 FDDOLEGBPHH = 14;
 	uint32 DBLCHMFMIDJ = 4;
 	uint32 AKMLEFNJPEN = 13;
@@ -8268,7 +8268,7 @@ message OHHLGOFKBNO {
 }
 
 message BOLHAFJPMEC {
-	enum BOABPGEMDAB = 9;
+	FEOEOFGGCLE BOABPGEMDAB = 9;
 	OHHLGOFKBNO OGBINBMLPIN = 1;
 }
 
@@ -8310,7 +8310,7 @@ message KOOCCDDMAOO {
 }
 
 message DNFPNPOKPGG {
-	enum state = 15;
+	FMBMMKCIELK state = 15;
 	uint32 IBJADECBJOF = 10;
 	uint32 hp = 13;
 	uint32 NBDKELLGKLP = 8;
@@ -8373,7 +8373,7 @@ message OOHGAOBIIKP {
 	GGIBOHHAIKA BEGNFMEADEL = 14;
 	uint32 KBFFJFCGDNJ = 4;
 	uint32 PBKHMCFECEE = 11;
-	enum GJNPNGDMGMH = 15;
+	JLMBAEKILPG GJNPNGDMGMH = 15;
 }
 
 message HEGMPLCLOMG {
@@ -8387,9 +8387,9 @@ message HEGMPLCLOMG {
 	uint32 level = 8;
 	repeated AssistSimpleInfo LNCPCIPLDHD = 1;
 	string MCKKBKPOMLI = 4;
-	enum OFCEAELHIAJ = 7;
+	BHOFBFFAJJK OFCEAELHIAJ = 7;
 	string OPIACEKOANJ = 12;
-	enum platform = 15;
+	PlatformType platform = 15;
 }
 
 message IFDAFHEEAAN {
@@ -8450,7 +8450,7 @@ message DNCLPGJGHHK {
 	bool KDAKDMCGFND = 11;
 	bool BPELFJGIJID = 7;
 	bool DKLJGCEHPJL = 5;
-	enum EPMCKMCDIGB = 15;
+	JLMBAEKILPG EPMCKMCDIGB = 15;
 }
 
 message CAIDCEFAPAB {
@@ -8468,7 +8468,7 @@ message DHKCIHEODML {
 	string MDDDOKFINDH = 4;
 	repeated DisplayAvatarDetailInfo HGLDGCLGLNG = 8;
 	repeated DisplayAvatarDetailInfo DBNOFKMNOAC = 1854;
-	enum platform = 5;
+	PlatformType platform = 5;
 	MAPBIMHMJLO BHEAOIOAGEC = 13;
 	CAIDCEFAPAB JLLPKCHGKOP = 1079;
 	uint32 uid = 9;
@@ -8482,7 +8482,7 @@ message DHKCIHEODML {
 message MOAJBLNMOGO {
 	OOHGAOBIIKP EFHDEANOPHB = 2;
 	HEGMPLCLOMG OKCHMINCCNE = 1;
-	enum MMJCCANODOJ = 14;
+	PlayingState MMJCCANODOJ = 14;
 	string KKMACPKIFKP = 13;
 	bool KFDOAHPKDMC = 8;
 }
@@ -8505,7 +8505,7 @@ message PMBBBGJELBJ {
 message DOJCGNJFHHD {
 	uint32 INMOGMIPBNH = 4;
 	uint32 EKONPNJPPAF = 7;
-	enum platform = 9;
+	PlatformType platform = 9;
 	string MCKKBKPOMLI = 1;
 	uint32 level = 10;
 	string KKMACPKIFKP = 15;
@@ -8560,7 +8560,7 @@ message NJDHPPFMDJO {
 }
 
 message OLHELHNHLCI {
-	enum BKMODLIJKGO = 8;
+	DevelopmentType BKMODLIJKGO = 8;
 	int64 time = 7;
 	HLNCNPHPNJB GIJPNCCEGEK = 1867;
 	NJDHPPFMDJO AIIEOGKGBIJ = 1350;
@@ -8598,7 +8598,7 @@ message OPEPOGFMKNH {
 }
 
 message AEDFFIHPNPF {
-	enum LGEKDBJJLNI = 12;
+	KAMMNBKBEOL LGEKDBJJLNI = 12;
 	uint32 uid = 5;
 }
 
@@ -8764,7 +8764,7 @@ message EBMLNJABLLM {
 }
 
 message AEJBPEDECGE {
-	enum platform = 4;
+	PlatformType platform = 4;
 	string AOBDBHGCKCM = 7;
 }
 
@@ -8806,7 +8806,7 @@ message ODFCEEGNNNI {
 
 message CJHHMBLOBDL {
 	uint32 PAFMFIBJJBA = 6;
-	enum DMEGPIKBEKI = 5;
+	AssistAvatarType DMEGPIKBEKI = 5;
 	bool CLBGEIOMCOJ = 2;
 	uint32 FLOKNFOIPCM = 3;
 	uint32 LGICIAEBMON = 10;
@@ -8843,7 +8843,7 @@ message MLDLJGGODJO {
 message KGNGKCMJMLI {
 	uint32 group_id = 10;
 	uint32 uid = 6;
-	enum EEOLCCFMJFF = 12;
+	JLMBAEKILPG EEOLCCFMJFF = 12;
 }
 
 message DNFIEHDOIFF {
@@ -8955,10 +8955,10 @@ message MMDLKKBNKPD {
 
 message PHAKGMKCBPK {
 	bool JAOCGOEMJPI = 11;
-	enum BKHNLBNBKNF = 10;
+	ECLMHPDLLPN BKHNLBNBKNF = 10;
 	bool NNEEAINEBPM = 1;
 	uint32 GPPDNODOEBH = 5;
-	enum step = 9;
+	ALEFJKKKEGA step = 9;
 }
 
 message OAIGCJKNEGA {
@@ -8974,17 +8974,17 @@ message GKODOIGLLHF {
 	repeated PHAKGMKCBPK HIANKELKFIG = 6;
 	repeated MMDLKKBNKPD OGPOFBLDBPP = 15;
 	repeated OAIGCJKNEGA BIKNELBHPEE = 8;
-	enum IENCKNKDBDI = 14;
+	BJGCCNNMPHI IENCKNKDBDI = 14;
 }
 
 message CBPKBGFMOFO {
-	enum MIBEKFHNCCC = 9;
+	ECLMHPDLLPN MIBEKFHNCCC = 9;
 	uint32 GPPDNODOEBH = 7;
 	uint32 PKBMEHAFBCH = 1;
 }
 
 message GOBADOMPKLM {
-	enum ALIMAOAEFPA = 7;
+	ECLMHPDLLPN ALIMAOAEFPA = 7;
 	uint32 GPPDNODOEBH = 10;
 	uint32 retcode = 13;
 }
@@ -9014,7 +9014,7 @@ message BOHIMDNLDFN {
 }
 
 message AMJOKEIIHDD {
-	enum IENCKNKDBDI = 8;
+	BJGCCNNMPHI IENCKNKDBDI = 8;
 	repeated OAIGCJKNEGA BIKNELBHPEE = 12;
 	repeated MMDLKKBNKPD CMGJFCDKEBD = 2;
 	repeated PHAKGMKCBPK NAGJFPOJIPC = 11;
@@ -9266,7 +9266,7 @@ message CODCOCEDEBO {
 message PKPKKMIKMKP {
 	uint32 base_avatar_id = 11;
 	uint32 KFJJDCCKNOL = 10;
-	enum BFGGBHNINLK = 8;
+	AvatarType BFGGBHNINLK = 8;
 	uint32 HGDCHHIENCC = 15;
 	bool LBDJNGPKPMN = 1;
 	uint32 IDONMCFMCBE = 5;
@@ -9452,13 +9452,13 @@ message IOOCKGLNMIC {
 }
 
 message OFANMMHOOEB {
-	enum DGLLJFNEMOK = 6;
+	DENLODKNFJE DGLLJFNEMOK = 6;
 	bool LNEKBEGKACP = 3;
 }
 
 message KOOIPEAMHEE {
 	uint32 retcode = 1;
-	enum DGLLJFNEMOK = 3;
+	DENLODKNFJE DGLLJFNEMOK = 3;
 	bool LNEKBEGKACP = 4;
 }
 
@@ -9645,12 +9645,12 @@ message LineupAvatar {
 	uint32 satiety = 9;
 	uint32 id = 11;
 	uint32 hp = 2;
-	enum avatar_type = 12;
+	AvatarType avatar_type = 12;
 }
 
 message LineupInfo {
 	uint32 IHBCJPBEGHP = 11;
-	enum extra_lineup_type = 6;
+	ExtraLineupType extra_lineup_type = 6;
 	uint32 ABOLLMBDFJP = 13;
 	uint32 IDFBPEDNECA = 2;
 	uint32 NGGPHGPDMFD = 9;
@@ -9678,8 +9678,8 @@ message KANKNAEKLKP {
 	uint32 base_avatar_id = 12;
 	bool is_virtual = 3;
 	uint32 slot = 6;
-	enum extra_lineup_type = 10;
-	enum avatar_type = 7;
+	ExtraLineupType extra_lineup_type = 10;
+	AvatarType avatar_type = 7;
 	uint32 plane_id = 5;
 }
 
@@ -9689,10 +9689,10 @@ message OPAHBBLFDNE {
 
 message CJGDAEANOLF {
 	uint32 index = 8;
-	enum avatar_type = 12;
+	AvatarType avatar_type = 12;
 	uint32 plane_id = 15;
 	bool is_virtual = 2;
-	enum extra_lineup_type = 4;
+	ExtraLineupType extra_lineup_type = 4;
 	uint32 base_avatar_id = 6;
 }
 
@@ -9708,7 +9708,7 @@ message JLHJONOKIHC {
 	uint32 OPHHEMEKAHG = 3;
 	uint32 plane_id = 6;
 	uint32 IPJANIPLLFG = 4;
-	enum extra_lineup_type = 11;
+	ExtraLineupType extra_lineup_type = 11;
 	uint32 index = 7;
 	bool is_virtual = 5;
 }
@@ -9728,7 +9728,7 @@ message DIHBPHBEOCI {
 message KAHAFEFPCPD {
 	uint32 id = 6;
 	uint32 hp = 15;
-	enum avatar_type = 10;
+	AvatarType avatar_type = 10;
 }
 
 message CEGOGJNEOMF {
@@ -9779,7 +9779,7 @@ message NMIMFHIAGCG {
 }
 
 message OMGGNKGPDCM {
-	enum avatar_type = 8;
+	AvatarType avatar_type = 8;
 	uint32 id = 5;
 	uint32 slot = 14;
 }
@@ -9790,7 +9790,7 @@ message IPAGJPHJDBD {
 	uint32 IHBCJPBEGHP = 7;
 	bool is_virtual = 4;
 	repeated OMGGNKGPDCM IPHNMDOIFON = 14;
-	enum extra_lineup_type = 10;
+	ExtraLineupType extra_lineup_type = 10;
 	uint32 index = 2;
 }
 
@@ -9799,16 +9799,16 @@ message DLDNGOALCDB {
 }
 
 message PPFCEMJEFKA {
-	enum extra_lineup_type = 12;
+	ExtraLineupType extra_lineup_type = 12;
 }
 
 message PEGIPGHOGDE {
 	JBEBLKIKGMP MHDJJGDLLIG = 10;
-	enum MHCFIEHGNCE = 3;
+	HCKIOAEMKEE MHCFIEHGNCE = 3;
 }
 
 message PIDNLINDFPL {
-	enum MHCFIEHGNCE = 6;
+	HCKIOAEMKEE MHCFIEHGNCE = 6;
 	repeated NJMGIJBHCPE DOLKBPLJGNO = 3;
 	uint64 LOPNFDJHCLN = 15;
 	uint32 retcode = 13;
@@ -9832,7 +9832,7 @@ message GGMOIKBIALM {
 	uint64 LOPNFDJHCLN = 2;
 	uint32 retcode = 13;
 	repeated NJMGIJBHCPE DOLKBPLJGNO = 9;
-	enum MHCFIEHGNCE = 4;
+	HCKIOAEMKEE MHCFIEHGNCE = 4;
 }
 
 message BDGDOBFIHOA {
@@ -9851,7 +9851,7 @@ message HCNIGMIKOMO {
 }
 
 message KOJCKPINBGJ {
-	enum EEOLCCFMJFF = 8;
+	FPFECCNFJJL EEOLCCFMJFF = 8;
 	uint32 FMIJGJANHFI = 9;
 	JBEBLKIKGMP MHDJJGDLLIG = 3;
 }
@@ -9861,7 +9861,7 @@ message EAPJPCDAGDH {
 }
 
 message NDOKMKMNAEN {
-	enum EEOLCCFMJFF = 4;
+	FPFECCNFJJL EEOLCCFMJFF = 4;
 	uint32 uid = 1;
 	repeated NJMGIJBHCPE DOLKBPLJGNO = 6;
 }
@@ -9877,7 +9877,7 @@ message CHFHNIADCBI {
 message FNPLAICDJMO {
 	uint32 LOPNFDJHCLN = 10;
 	uint32 IJIDAJHNCLN = 9;
-	enum MHCFIEHGNCE = 1;
+	HCKIOAEMKEE MHCFIEHGNCE = 1;
 }
 
 message JDJGHEAJDBL {
@@ -9885,7 +9885,7 @@ message JDJGHEAJDBL {
 
 message OKGGKAAMDLB {
 	uint64 ILGJLGKPDON = 12;
-	enum MHCFIEHGNCE = 8;
+	HCKIOAEMKEE MHCFIEHGNCE = 8;
 	uint32 retcode = 6;
 	repeated NJMGIJBHCPE DOLKBPLJGNO = 14;
 	uint64 LOPNFDJHCLN = 13;
@@ -9899,7 +9899,7 @@ message ECKHCKJMEDG {
 message ClientMail {
 	bool is_read = 4;
 	uint32 id = 7;
-	enum mail_type = 13;
+	FNAIBDHKPEI mail_type = 13;
 	string title = 8;
 	int64 time = 6;
 	ItemList attachment = 15;
@@ -10104,7 +10104,7 @@ message LJBMCNLGNPA {
 }
 
 message BLBPLFADCOA {
-	enum MHCFIEHGNCE = 15;
+	HCKIOAEMKEE MHCFIEHGNCE = 15;
 	JBEBLKIKGMP MHDJJGDLLIG = 2;
 }
 
@@ -10131,7 +10131,7 @@ message FLHGMKAOKOL {
 message JGMFPCOBKCB {
 	uint32 retcode = 1;
 	uint64 ILGJLGKPDON = 10;
-	enum MHCFIEHGNCE = 11;
+	HCKIOAEMKEE MHCFIEHGNCE = 11;
 	uint64 LOPNFDJHCLN = 8;
 }
 
@@ -10205,7 +10205,7 @@ message IEKEDEPMJKB {
 message NLEHGOBEKJO {
 	uint32 id = 12;
 	uint32 LEPDNAJCBPB = 5;
-	enum status = 7;
+	MessageSectionStatus status = 7;
 	uint32 DMBIDBENPGI = 4;
 	repeated IEKEDEPMJKB LHFFLOKIELE = 6;
 }
@@ -10215,7 +10215,7 @@ message AFCDAEMFPKI {
 	repeated NLEHGOBEKJO BPNFACHELGM = 15;
 	uint32 id = 12;
 	uint32 KACIMADCGOI = 13;
-	enum status = 7;
+	MessageGroupStatus status = 7;
 }
 
 message NPCHKAOCJJF {
@@ -10232,13 +10232,13 @@ message LEMMMGOFABH {
 }
 
 message JMBMCOPAKEJ {
-	enum OFAPBILBJKM = 10;
+	MessageGroupStatus OFAPBILBJKM = 10;
 	int64 refresh_time = 6;
 	uint32 group_id = 11;
 }
 
 message NEPMNFEENIB {
-	enum CPBNHCCKFDG = 11;
+	MessageSectionStatus CPBNHCCKFDG = 11;
 	uint32 MANNEKNIHFO = 4;
 }
 
@@ -10327,7 +10327,7 @@ message OMHHADPDABC {
 message FALAFLOMLAN {
 	uint32 ADENLFJOOPL = 9;
 	string LDELHKCCHHN = 13;
-	enum EEOLCCFMJFF = 2;
+	HDCNOKOKDHC EEOLCCFMJFF = 2;
 }
 
 message JMGEAKIDLHK {
@@ -10346,7 +10346,7 @@ message AJKNOBDPJAP {
 	uint32 IGHBDHEBHAF = 11;
 	uint32 GAMGKLFHDAB = 3;
 	uint32 level = 8;
-	enum EEOLCCFMJFF = 5;
+	HBHPONEOFGF EEOLCCFMJFF = 5;
 }
 
 message ENCELBGKOHA {
@@ -10406,14 +10406,14 @@ message KGODCPNBPKM {
 }
 
 message KMGGNJAKPGI {
-	enum EEOLCCFMJFF = 8;
+	DHELEBHIKCD EEOLCCFMJFF = 8;
 	uint32 FJOJLFMCPKP = 2;
 	uint32 id = 10;
 }
 
 message Mission {
 	uint32 id = 2;
-	enum status = 1;
+	MissionStatus status = 1;
 	uint32 progress = 8;
 }
 
@@ -10428,7 +10428,7 @@ message GEIJAMKJFEF {
 
 message LOOOCBGENKE {
 	repeated DIAAMFMFBBE FMDHMHBPPEO = 9;
-	enum status = 15;
+	MissionStatus status = 15;
 	uint32 id = 12;
 }
 
@@ -10606,7 +10606,7 @@ message MGMJLIHNNMA {
 message EMGPMELLJLA {
 	uint32 LAFFPEAFMCN = 7;
 	uint32 DPBAOFOMNGE = 2;
-	enum PDKNMDMMDJK = 13;
+	MOFOCPEAPDD PDKNMDMMDJK = 13;
 }
 
 message NOIDKKLKCFC {
@@ -10629,7 +10629,7 @@ message NILNKCMEFKO {
 
 message HPMNAAJDCGB {
 	uint32 MKICOAABLKA = 2;
-	enum NIJHKNLKBKA = 8;
+	FBLFGOBDMKD NIJHKNLKBKA = 8;
 }
 
 message NGPNIEAKNED {
@@ -10705,7 +10705,7 @@ message IMPCIBMECLB {
 	bool ANMEDMEJHIO = 8;
 	uint32 JLJIKLDHIJE = 4;
 	uint32 EGKOJHEIOHH = 12;
-	enum AFEFKOFNIID = 2;
+	OAFMCJJFPHO AFEFKOFNIID = 2;
 }
 
 message MKKFCGGHEPH {
@@ -10903,7 +10903,7 @@ message MonopolyActionResult {
 	uint32 ClickCellId = 8;
 	uint32 click_map_id = 11;
 	uint32 trigger_map_id = 10;
-	enum source_type = 3;
+	BHGKIJGANCM source_type = 3;
 	DBHLDAELOFI detail = 5;
 }
 
@@ -11369,7 +11369,7 @@ message LALHNHDEHGK {
 message DPJMDAOOING {
 	uint32 DJPAJNOCHHG = 7;
 	uint32 FJAFGJLFJGD = 13;
-	enum NLEFHGHGKPE = 10;
+	PNDLEEJDNJG NLEFHGHGKPE = 10;
 	HLEMBLOIKAM FANMEJFOCIL = 11;
 }
 
@@ -11422,7 +11422,7 @@ message PIKJJIOCEOP {
 
 message GGJDIKHDJOM {
 	uint32 CAPKIANAJIM = 14;
-	enum pos = 2;
+	BLHDECCDHDM pos = 2;
 }
 
 message MNMMELAIBJK {
@@ -11458,7 +11458,7 @@ message CIBFGBHDPAM {
 	uint32 FAGJDONPNNE = 10;
 	uint32 EOCPNIDFFDD = 7;
 	uint32 CGHBPPHAMCE = 14;
-	enum state = 1;
+	OHDDKHGHJAB state = 1;
 	uint32 NBMOOEFBEFD = 4;
 	uint32 FMCKENFKHFM = 13;
 }
@@ -11500,14 +11500,14 @@ message HILBGOMLGHK {
 
 message HPDEIJNFMCC {
 	uint32 LALCDJKCHLE = 10;
-	enum pos = 13;
+	BLHDECCDHDM pos = 13;
 	uint32 CAPKIANAJIM = 12;
 }
 
 message BEJICABNFBO {
 	uint32 LALCDJKCHLE = 11;
 	uint32 CAPKIANAJIM = 14;
-	enum pos = 2;
+	BLHDECCDHDM pos = 2;
 	uint32 retcode = 10;
 }
 
@@ -11521,7 +11521,7 @@ message HLFIAAALMGM {
 }
 
 message MCDGEHKFHDM {
-	enum IBPAGGPKNHJ = 11;
+	LMIKHOBPLCA IBPAGGPKNHJ = 11;
 	uint32 CAPKIANAJIM = 5;
 }
 
@@ -11552,11 +11552,11 @@ message FMNJPKFHIPF {
 message LDOCNGNELHC {
 	uint32 ONBDKKFHLAO = 14;
 	uint32 level = 12;
-	enum JPKIBNIHGOD = 7;
+	JFLBDNGFGMD JPKIBNIHGOD = 7;
 }
 
 message PELPFHEPEGE {
-	enum JPKIBNIHGOD = 13;
+	JFLBDNGFGMD JPKIBNIHGOD = 13;
 	uint32 ONBDKKFHLAO = 14;
 	uint32 retcode = 12;
 	uint32 level = 2;
@@ -11645,7 +11645,7 @@ message HNOGMBJEGJD {
 	uint32 HMGJGHACIGM = 15;
 	uint32 BBOAEJKGEBO = 4;
 	uint32 HKNLFIKBOBD = 14;
-	enum AJIMLCLOEKJ = 5;
+	MHAKLHHANJL AJIMLCLOEKJ = 5;
 }
 
 message HNLBGPHLHBL {
@@ -11742,7 +11742,7 @@ message PlayerLoginCsReq {
 	string LGLEFCNIJKL = 13;
 	uint64 login_random = 9;
 	string KEAPPFOFEJI = 4;
-	enum language = 7;
+	LanguageType language = 7;
 	uint32 DHICFKJEPBI = 1687;
 	string MDDDOKFINDH = 12;
 	string JJNINCMBIDN = 5;
@@ -11751,7 +11751,7 @@ message PlayerLoginCsReq {
 	string LGOMKMJMEDM = 155;
 	string BCIJKADEMIE = 940;
 	string GIMCNHMAPBP = 11;
-	enum platform = 3;
+	PlatformType platform = 3;
 	uint32 CIDHAHDCHDL = 15;
 	uint32 AJDGHADCPGM = 1;
 	string MCKKBKPOMLI = 138;
@@ -11804,7 +11804,7 @@ message DCGGMOOPMII {
 
 message PlayerKickOutScNotify {
 	BlackInfo black_info = 10;
-	enum kick_type = 12;
+	KickType kick_type = 12;
 }
 
 message GmTalkCsReq {
@@ -11828,7 +11828,7 @@ message PlayerSettingInfo {
 	bool KDAKDMCGFND = 15;
 	bool LFGHGADKHPD = 10;
 	bool DKLJGCEHPJL = 8;
-	enum EPMCKMCDIGB = 6;
+	JLMBAEKILPG EPMCKMCDIGB = 6;
 	bool KEACGBKOFKF = 5;
 }
 
@@ -11912,11 +11912,11 @@ message PAGCNLHHNPC {
 }
 
 message SetLanguageCsReq {
-	enum language = 4;
+	LanguageType language = 4;
 }
 
 message SetLanguageScRsp {
-	enum language = 5;
+	LanguageType language = 5;
 	uint32 retcode = 13;
 }
 
@@ -12004,7 +12004,7 @@ message JDKHDANPJEA {
 
 message PDLCDMEPDDJ {
 	uint32 KBEJIBADOKJ = 9;
-	enum avatar_id = 11;
+	MultiPathAvatarType avatar_id = 11;
 	repeated AvatarSkillTree FKDENBOKHPO = 5;
 	repeated EquipRelic HLPGKBDIEHL = 13;
 	repeated AvatarSkillTree CHPFJFOCNJN = 14;
@@ -12013,11 +12013,11 @@ message PDLCDMEPDDJ {
 }
 
 message SetAvatarPathCsReq {
-	enum avatar_id = 7;
+	MultiPathAvatarType avatar_id = 7;
 }
 
 message SetAvatarPathScRsp {
-	enum avatar_id = 9;
+	MultiPathAvatarType avatar_id = 9;
 	uint32 retcode = 10;
 }
 
@@ -12032,39 +12032,39 @@ message GetMultiPathAvatarInfoScRsp {
 }
 
 message UnlockAvatarPathCsReq {
-	enum avatar_id = 7;
+	MultiPathAvatarType avatar_id = 7;
 }
 
 message UnlockAvatarPathScRsp {
 	uint32 GMHDHIMDKFI = 7;
 	uint32 retcode = 8;
-	enum avatar_id = 6;
+	MultiPathAvatarType avatar_id = 6;
 	ItemList ADKJIIANOOM = 12;
 }
 
 message IFFEIGOPCKC {
-	enum LLNDJJHPKHG = 9;
+	MultiPathAvatarType LLNDJJHPKHG = 9;
 	uint32 base_avatar_id = 3;
 }
 
 message LAFFEFHDGAG {
-	enum HLHOOMICLJE = 11;
+	Gender HLHOOMICLJE = 11;
 }
 
 message OKGFNHEMPCN {
-	enum FDOALODDFLD = 1;
+	MultiPathAvatarType FDOALODDFLD = 1;
 	uint32 retcode = 4;
 }
 
 message MJEJLDGKELE {
 	string nickname = 5;
 	bool is_modify = 7;
-	enum HLHOOMICLJE = 6;
+	Gender HLHOOMICLJE = 6;
 }
 
 message CMPPCENAHPB {
 	int64 LBLMBAEBPBN = 6;
-	enum FDOALODDFLD = 12;
+	MultiPathAvatarType FDOALODDFLD = 12;
 	bool is_modify = 2;
 	uint32 retcode = 15;
 }
@@ -12073,7 +12073,7 @@ message EHNNABANJFO {
 }
 
 message DOFFKNAPGOM {
-	enum KNFOKOAOGJH = 9;
+	ProductGiftType KNFOKOAOGJH = 9;
 	string JGOFENPOJJI = 13;
 	uint32 JBEFEAHCJDM = 11;
 	string PDLIGIAGJLJ = 3;
@@ -12146,12 +12146,12 @@ message PlayerHeartBeatScRsp {
 }
 
 message KGADBHGGKHL {
-	enum HEPOBAPLHCO = 2;
+	FeatureSwitchType HEPOBAPLHCO = 2;
 }
 
 message AFNMBKHNKKM {
 	string DJNLELPPHJI = 12;
-	enum EEOLCCFMJFF = 15;
+	SecretKeyType EEOLCCFMJFF = 15;
 }
 
 message MDBBINLCMBK {
@@ -12223,7 +12223,7 @@ message KAOLBOHJHJP {
 	bool DAFHJJEDMOF = 6;
 	bool KDAKDMCGFND = 4;
 	bool BPELFJGIJID = 14;
-	enum EPMCKMCDIGB = 10;
+	JLMBAEKILPG EPMCKMCDIGB = 10;
 	bool DKLJGCEHPJL = 2;
 	bool KEACGBKOFKF = 1;
 	bool LFGHGADKHPD = 8;
@@ -12392,7 +12392,7 @@ message ANLPKDGKOMM {
 message NECCKKHPKHL {
 	int64 BAFKEBMDFJI = 12;
 	uint32 OKGJGNDJIDE = 6;
-	enum status = 9;
+	LDMJPFCLMJI status = 9;
 	int64 LMLFKFKJEEB = 3;
 	uint32 MDCILIGHIJF = 10;
 	uint32 MFMJBFAKDOI = 8;
@@ -12424,7 +12424,7 @@ message PPIFCDCDPIB {
 	OCNJNNJAMCG basic_info = 11;
 	uint32 JGBGIKPBLFP = 14;
 	LMDAMMAFNEN CENDPDCDNGP = 4;
-	enum ICCJJBMEPMM = 2;
+	PunkLordAttackerStatus ICCJJBMEPMM = 2;
 }
 
 message EMBEGMGGNJC {
@@ -12452,11 +12452,11 @@ message KDCEFJNCCMP {
 message GFAEGPGLKEM {
 	uint32 uid = 4;
 	uint32 monster_id = 3;
-	enum NGFEEBAEKAM = 5;
+	PunkLordShareType NGFEEBAEKAM = 5;
 }
 
 message GALFGJPDKBO {
-	enum NGFEEBAEKAM = 12;
+	PunkLordShareType NGFEEBAEKAM = 12;
 	uint32 retcode = 4;
 	uint32 uid = 3;
 	uint32 monster_id = 8;
@@ -12485,7 +12485,7 @@ message LKLFIHCJPCF {
 message DLFAECCJAOH {
 	OCNJNNJAMCG basic_info = 12;
 	PunkLordBattleRecord CENDPDCDNGP = 15;
-	enum NLEFHGHGKPE = 3;
+	PunkLordMonsterInfoNotifyReason NLEFHGHGKPE = 3;
 	uint32 KMHGFOEBOJK = 14;
 }
 
@@ -12572,7 +12572,7 @@ message OMAICDPIIEM {
 message MDENNNNBMNC {
 	int64 BAFKEBMDFJI = 4;
 	uint32 GECBFFCJJGJ = 1;
-	enum status = 8;
+	QuestStatus status = 8;
 	uint32 progress = 6;
 	uint32 id = 15;
 }
@@ -12662,14 +12662,14 @@ message IFBOPGPGJLJ {
 }
 
 message CJHIMKBFPIA {
-	enum HEEEMJFAALF = 8;
+	DENNPFNEMIF HEEEMJFAALF = 8;
 	uint32 FGICLIAGNIN = 3;
 	uint32 GJAPMAIEAAI = 2;
 }
 
 message IFOKKGHBPNC {
 	uint32 GGFPCDONOFJ = 4;
-	enum status = 2;
+	RaidStatus status = 2;
 	uint32 world_level = 1;
 	repeated CJHIMKBFPIA DFKBAOMMLEI = 10;
 	ItemList LHFFLOKIELE = 11;
@@ -12764,7 +12764,7 @@ message CADIMDKJMLP {
 }
 
 message GFDBDJPKGCO {
-	enum NLEFHGHGKPE = 15;
+	HDHIENAJBKF NLEFHGHGKPE = 15;
 	uint32 world_level = 11;
 	LineupInfo lineup = 1;
 	uint32 GGFPCDONOFJ = 3;
@@ -12807,7 +12807,7 @@ message IKAKCFNKJMD {
 
 message KKLEGNCNEGO {
 	uint32 group_id = 14;
-	enum CLDEJHLAHII = 11;
+	EJOFFDHCFDA CLDEJHLAHII = 11;
 	uint32 param_list = 7;
 	uint32 ABEDIGLKNCF = 13;
 	uint32 BAKLBHIBADH = 15;
@@ -12835,7 +12835,7 @@ message ONDECKHMFID {
 }
 
 message IAAAHNPEEEC {
-	enum KFHJMGKBFIE = 3;
+	ReplayType KFHJMGKBFIE = 3;
 	uint32 stage_id = 15;
 	uint32 MGEAKFDLCOL = 4;
 	uint32 HOLLKMFGADB = 1;
@@ -12845,7 +12845,7 @@ message IAAAHNPEEEC {
 
 message NPAKIOMLLNB {
 	string AJCJGGBFMKF = 15;
-	enum KFHJMGKBFIE = 9;
+	ReplayType KFHJMGKBFIE = 9;
 	uint32 retcode = 3;
 	uint32 stage_id = 1;
 	string DHDMABNFKBM = 4;
@@ -12887,8 +12887,8 @@ message NADLMBOOGPE {
 message DHMFJINEGJF {
 	uint32 HHNMDAKKDPD = 1;
 	uint32 MGAHHMCOGKK = 14;
-	enum GCLIKAAOKJL = 3;
-	enum GCAAEMOFLDM = 10;
+	RogueRoomStatus GCLIKAAOKJL = 3;
+	RogueRoomStatus GCAAEMOFLDM = 10;
 	uint32 LOPNFDJHCLN = 12;
 }
 
@@ -12903,9 +12903,9 @@ message IHLHFHIJFIK {
 message PGKIOJPAPKK {
 	bool IDHCLDDENHB = 4;
 	uint32 AHDIECBFBIF = 10;
-	enum ICPANMCHBKB = 15;
+	CKANLCGNOIL ICPANMCHBKB = 15;
 	uint32 ONBDKKFHLAO = 9;
-	enum MEFCILNEJKN = 5;
+	RogueStatus MEFCILNEJKN = 5;
 	uint32 EGKOJHEIOHH = 13;
 }
 
@@ -12920,7 +12920,7 @@ message FAIFPFPHCDE {
 	uint32 BHBCDKIMBFL = 2;
 	bool ACCGEPOBNPK = 8;
 	uint32 LLPKBHJILJN = 4;
-	enum AJMBMJDJEJJ = 1;
+	BMGHHGAHIIN AJMBMJDJEJJ = 1;
 	uint32 MJFJBBEPONN = 6;
 	repeated IOOGELPCMLN IMPBNMLGOPF = 14;
 }
@@ -13012,7 +13012,7 @@ message PPNEBKPICML {
 
 message HJPBMMBNAED {
 	PAOGLFPDNOA JGHAOFCGEMP = 3;
-	enum status = 12;
+	RogueStatus status = 12;
 	IBLHIDENCOG OLIBJIMDGGB = 1;
 	bool GPOIMNADJOH = 14;
 	IHLHFHIJFIK OHCEDACENOC = 7;
@@ -13098,7 +13098,7 @@ message KCDAFCJDKMN {
 	uint32 slot = 14;
 	uint32 id = 15;
 	uint32 level = 13;
-	enum avatar_type = 9;
+	AvatarType avatar_type = 9;
 }
 
 message HACDNMIIION {
@@ -13162,7 +13162,7 @@ message MIJAFKCPBJP {
 }
 
 message DJEBLGIMPLF {
-	enum AEOAMKLMBCB = 11;
+	IJMOGDNAAEB AEOAMKLMBCB = 11;
 	uint32 FHCCBCALCKE = 15;
 	ItemList IMOJCCEGMMM = 1;
 }
@@ -13426,7 +13426,7 @@ message DHMDNDLHPNM {
 
 message BHHDJKLPIDH {
 	bool IKGJCPMHHII = 9;
-	enum status = 6;
+	RogueStatus status = 6;
 }
 
 message CDGLGKOCLLF {
@@ -13463,7 +13463,7 @@ message RogueCommonBuffSelectInfo {
 	uint32 certain_select_buff_id = 14;
 	repeated JHALLHFNDEH select_buff_list = 10;
 	uint32 roll_buff_count = 6;
-	enum source_type = 4;
+	BMGHHGAHIIN source_type = 4;
 	uint32 first_buff_type_list = 8;
 }
 
@@ -13697,7 +13697,7 @@ message HBKDOJFLDGB {
 
 message KOMCCJGJHNM {
 	uint32 avatar_id = 5;
-	enum avatar_type = 13;
+	AvatarType avatar_type = 13;
 }
 
 message RogueSyncContextBoardEvent {
@@ -13869,14 +13869,14 @@ message GetEnhanceCommonRogueBuffInfoScRsp {
 }
 
 message BANNKMICEAA {
-	enum GJNPNGDMGMH = 8;
+	OEDKCPFBCAP GJNPNGDMGMH = 8;
 	repeated ELCMBGEAOMN FDGHFKBNDKC = 5;
 	uint32 NNLELKHHBCL = 7;
 }
 
 message ELCMBGEAOMN {
 	OHNBILFPCDM EOLEGGEPOIO = 4;
-	enum LGEKDBJJLNI = 11;
+	KHKFCCLABMD LGEKDBJJLNI = 11;
 }
 
 message FMIAIMDBIAI {
@@ -14188,7 +14188,7 @@ message RogueUnlockProgress {
 
 message JHOOKGKGAAP {
 	uint32 KBJMNKPIBJH = 12;
-	enum status = 7;
+	DHGHLLIDAKE status = 7;
 	repeated RogueUnlockProgress FDJEDKGKCIL = 5;
 }
 
@@ -14452,13 +14452,13 @@ message BGNNAFICAHO {
 }
 
 message EMHBBMKDDKE {
-	enum status = 8;
+	CLJMGCEBLCI status = 8;
 	uint32 LOEOCICFOPB = 13;
 }
 
 message KKMOBBCJPML {
 	uint32 HKJLPJBINNM = 15;
-	enum status = 12;
+	GJHNLJFKIGE status = 12;
 	uint32 LOEOCICFOPB = 7;
 }
 
@@ -14484,13 +14484,13 @@ message LDHOCKEEGKP {
 }
 
 message EMIECBDCBNM {
-	enum status = 2;
+	JBBOKAOGBDI status = 2;
 	uint32 LNAIONDBECA = 3;
 }
 
 message GGPEHIBFFCB {
 	uint32 LNAIONDBECA = 4;
-	enum status = 3;
+	GJHNLJFKIGE status = 3;
 	uint32 HKJLPJBINNM = 5;
 }
 
@@ -14563,7 +14563,7 @@ message BDFMAEOPCFP {
 
 message BEBEALGJPLI {
 	BBLNDEMIPMI CAIHLMOIFHG = 7;
-	enum status = 11;
+	RogueStatus status = 11;
 	uint32 base_avatar_id_list = 3;
 	uint32 HANFDCIPMMD = 4;
 	uint32 GGHMFLALMKN = 15;
@@ -14604,7 +14604,7 @@ message NLGCEIMMIIE {
 
 message JACLKNHEFLK {
 	uint32 avatar_id = 15;
-	enum avatar_type = 1;
+	AvatarType avatar_type = 1;
 }
 
 message LJGOEBDAKJC {
@@ -14738,7 +14738,7 @@ message BINIPLHCGFP {
 
 message EJHPOIJDKFI {
 	uint32 GFBNDBDBDAO = 5;
-	enum BEGDCLPFCEH = 12;
+	NGOLGIGLBJG BEGDCLPFCEH = 12;
 	uint32 BKIEKCHKBHH = 13;
 }
 
@@ -14759,7 +14759,7 @@ message JCJOMJPELAM {
 message GOOFAJHLCEE {
 	EJHPOIJDKFI FPDIJECJJMF = 4;
 	uint64 GMFANAAJFAB = 12;
-	enum AJMBMJDJEJJ = 11;
+	ILKJJKFPFHC AJMBMJDJEJJ = 11;
 	KPMEFMNHIHE MCHNNHFIEBG = 1044;
 }
 
@@ -14790,7 +14790,7 @@ message IEOOJBLBANK {
 }
 
 message NBKDHMBKGJI {
-	enum AJMBMJDJEJJ = 10;
+	ILKJJKFPFHC AJMBMJDJEJJ = 10;
 }
 
 message MMGHEFGMHFO {
@@ -14844,8 +14844,8 @@ message NPDDMDDLHOO {
 message OHOELDDBAHK {
 	uint32 JBALMPCEPMF = 9;
 	repeated HGAHBBJIPMI AHBANIDFGEC = 14;
-	enum NLEFHGHGKPE = 13;
-	enum status = 8;
+	LPKALADMPND NLEFHGHGKPE = 13;
+	GIOJDCJKCEL status = 8;
 }
 
 message JFBELHFLNAA {
@@ -14862,13 +14862,13 @@ message HGAHBBJIPMI {
 	uint32 GIKEKGKEEMB = 9;
 	uint32 DIOBGDMACPB = 3;
 	uint32 HCAOIINOLDN = 7;
-	enum status = 11;
+	DMMGENFFCHJ status = 11;
 }
 
 message GAKIPIKJKJE {
 	uint32 AONJIMKFFEB = 9;
 	uint32 LOPNFDJHCLN = 11;
-	enum status = 6;
+	GJAJOJLOHEJ status = 6;
 	uint32 MHAAMKIPFMH = 15;
 }
 
@@ -14941,9 +14941,9 @@ message BHLDLOOOGDE {
 }
 
 message MCANLKLNOLL {
-	enum status = 1;
+	GIOJDCJKCEL status = 1;
 	uint32 JBALMPCEPMF = 5;
-	enum NLEFHGHGKPE = 12;
+	LPKALADMPND NLEFHGHGKPE = 12;
 	repeated HGAHBBJIPMI AHBANIDFGEC = 8;
 }
 
@@ -15149,7 +15149,7 @@ message NEIFMPJEBAP {
 }
 
 message IPNEHNEKCFN {
-	enum EONMHEBMIDH = 1;
+	LOEOAHCPNEN EONMHEBMIDH = 1;
 	uint32 GNOCKAOHNFJ = 2;
 }
 
@@ -15255,7 +15255,7 @@ message TakeRollShopRewardScRsp {
 }
 
 message SceneActorInfo {
-	enum avatar_type = 2;
+	AvatarType avatar_type = 2;
 	uint32 base_avatar_id = 11;
 	uint32 map_layer = 9;
 	uint32 uid = 7;
@@ -15359,13 +15359,13 @@ message PropRogueCurseChestInfo {
 }
 
 message PropExtraInfo {
-	enum rogue_info = 11;
-	enum aeon_info = 9;
-	enum chess_rogue_info = 8;
-	enum rogue_tourn_door_info = 13;
-	enum rogue_tourn_workbench_info = 1;
-	enum rogue_gamble_machine_info = 10;
-	enum rogue_curse_chest_info = 6;
+	PropRogueInfo rogue_info = 11;
+	PropAeonInfo aeon_info = 9;
+	PropChessRogueInfo chess_rogue_info = 8;
+	PropRogueTournDoorInfo rogue_tourn_door_info = 13;
+	PropRogueTournWorkbenchInfo rogue_tourn_workbench_info = 1;
+	PropRogueGambleMachineInfo rogue_gamble_machine_info = 10;
+	PropRogueCurseChestInfo rogue_curse_chest_info = 6;
 }
 
 message ScenePropInfo {
@@ -15515,7 +15515,7 @@ message InteractPropScRsp {
 }
 
 message PJNBMJOMPJK {
-	enum MAFPMCMCHEN = 7;
+	MonsterBattleType MAFPMCMCHEN = 7;
 	uint32 OMDLKEEFGDP = 15;
 }
 
@@ -15566,7 +15566,7 @@ message EANEDFGEAFC {
 
 message SceneEnterStageCsReq {
 	uint32 event_id = 4;
-	enum COEMOEECAEM = 15;
+	OICCDGCAPKG COEMOEECAEM = 15;
 	bool FAOBCNGOEFD = 7;
 }
 
@@ -15576,7 +15576,7 @@ message SceneEnterStageScRsp {
 }
 
 message IOIMIAAAHPE {
-	enum COEMOEECAEM = 7;
+	OICCDGCAPKG COEMOEECAEM = 7;
 }
 
 message KAEJPCPADKM {
@@ -15592,7 +15592,7 @@ message GetCurSceneInfoScRsp {
 }
 
 message DFMJJAPBDIJ {
-	enum NLEFHGHGKPE = 4;
+	SceneEntityBuffChangeType NLEFHGHGKPE = 4;
 	BuffInfo LLNEDFNGBAD = 5;
 	uint32 AIEABOMMABO = 15;
 	uint32 entity_id = 12;
@@ -15756,7 +15756,7 @@ message HealPoolInfoNotify {
 
 message EPOMDPEBKOG {
 	uint32 plane_id = 7;
-	enum avatar_type = 10;
+	AvatarType avatar_type = 10;
 	uint32 floor_id = 12;
 	uint32 id = 3;
 	uint32 prop_entity_id = 13;
@@ -15766,7 +15766,7 @@ message EPOMDPEBKOG {
 message SpringRecoverSingleAvatarScRsp {
 	uint32 hp = 13;
 	uint32 retcode = 5;
-	enum avatar_type = 14;
+	AvatarType avatar_type = 14;
 	uint32 id = 7;
 }
 
@@ -15826,7 +15826,7 @@ message OKPNBCPGHJN {
 }
 
 message DMONNCPDANB {
-	enum NLEFHGHGKPE = 1;
+	EnterSceneReason NLEFHGHGKPE = 1;
 	SceneInfo scene = 10;
 	LineupInfo lineup = 7;
 }
@@ -15861,7 +15861,7 @@ message DNOJLEENOBJ {
 message IBAECMKPGBC {
 	uint32 GHMDFFAMBPK = 7;
 	uint32 MJPIKPPJKMF = 3;
-	enum PEIPOPNGOEP = 4;
+	MapInfoChestType PEIPOPNGOEP = 4;
 }
 
 message NEOBMGCDILL {
@@ -15907,7 +15907,7 @@ message POCJNMLILPN {
 message OCDPKKBAKDI {
 	uint32 COCFIFOINGL = 8;
 	uint32 LNDAEICBOPJ = 12;
-	enum NLEFHGHGKPE = 10;
+	GameplayCounterUpdateReason NLEFHGHGKPE = 10;
 }
 
 message HCICGDDNHNK {
@@ -15940,7 +15940,7 @@ message HFJEMBFAOCL {
 
 message KBCANOCGHGI {
 	uint32 state = 1;
-	enum AKLLBBJIGPL = 7;
+	SceneGroupRefreshType AKLLBBJIGPL = 7;
 	repeated HFJEMBFAOCL GBGAPGIPHJJ = 5;
 	uint32 group_id = 2;
 }
@@ -16259,7 +16259,7 @@ message IPJFIHMHMJB {
 
 message OHDGMDLCNLL {
 	uint32 avatar_id = 5;
-	enum avatar_type = 7;
+	AvatarType avatar_type = 7;
 }
 
 message LJNLHMBAMPJ {
@@ -16299,7 +16299,7 @@ message ADENECOIBMH {
 message CIIOFAPEDKH {
 	uint32 BKFEJKEEAHP = 5;
 	uint32 GBPFEGKAJAG = 12;
-	enum DFOLOHBFFJJ = 15;
+	EJJDPOJOLMG DFOLOHBFFJJ = 15;
 }
 
 message BIGFGJHAHEL {
@@ -16308,7 +16308,7 @@ message BIGFGJHAHEL {
 }
 
 message StrongChallengeAvatar {
-	enum avatar_type = 10;
+	AvatarType avatar_type = 10;
 	uint32 avatar_id = 4;
 }
 
@@ -16355,7 +16355,7 @@ message CLOOADFLAIO {
 	uint32 FDDOLEGBPHH = 7;
 	uint32 HNJKNJNNDPJ = 13;
 	uint32 LMEDPAKEJCK = 6;
-	enum end_status = 8;
+	BattleEndStatus end_status = 8;
 	uint32 total_damage = 11;
 	uint32 KOIEIBKKMJF = 3;
 }
@@ -16375,7 +16375,7 @@ message EHKCKPBGJCC {
 }
 
 message DLDFNPEJFHK {
-	enum avatar_type = 14;
+	AvatarType avatar_type = 14;
 	uint32 avatar_id = 7;
 }
 
@@ -16455,7 +16455,7 @@ message ECIGNEGEAIH {
 message JDHLJLCFKMO {
 	uint32 value = 10;
 	uint32 PCLPEHLNDAF = 4;
-	enum AIKKMCBGKOM = 7;
+	FDFBKCOHBJG AIKKMCBGKOM = 7;
 }
 
 message DCAIJIDBGBK {
@@ -16491,7 +16491,7 @@ message JDNNEFNIEGL {
 
 message MHBCFFNEBEL {
 	uint32 JHINDCDBNML = 14;
-	enum GPJGAFFCMNG = 11;
+	JECNAADIEAE GPJGAFFCMNG = 11;
 	repeated JDNNEFNIEGL LOJFKFFCEAA = 10;
 }
 
@@ -16541,7 +16541,7 @@ message ENGJLGMAOAC {
 
 message BFDCFCKHILP {
 	HNADJAAFBMJ EOLEGGEPOIO = 1;
-	enum LGEKDBJJLNI = 14;
+	IMPNHHHPMBA LGEKDBJJLNI = 14;
 }
 
 message HNADJAAFBMJ {
@@ -16568,7 +16568,7 @@ message LCEMAIAAPCA {
 }
 
 message EJNNNBLNJIC {
-	enum AIKKMCBGKOM = 15;
+	FDFBKCOHBJG AIKKMCBGKOM = 15;
 	uint32 ILGEENMAONM = 11;
 	uint32 PJHIPNNJDDP = 1;
 }
@@ -16648,7 +16648,7 @@ message EACNAKCAJHP {
 }
 
 message JJLLFHOLLGC {
-	enum MDPMCJGPIIO = 5;
+	JECNAADIEAE MDPMCJGPIIO = 5;
 }
 
 message ELKMCNJBFAD {
@@ -16715,7 +16715,7 @@ message PCBOEDPMHOI {
 }
 
 message DLBJKLCHJHK {
-	enum NLEFHGHGKPE = 2;
+	JKMJAIADMLI NLEFHGHGKPE = 2;
 	uint32 PCMAAKHAEBC = 1;
 	uint32 BOCEAHMENHD = 7;
 	uint32 DKFLLECGCCK = 11;
@@ -16966,7 +16966,7 @@ message ANOGAFHFHEP {
 
 message DGLCMPNDODO {
 	uint32 avatar_id = 5;
-	enum avatar_type = 13;
+	AvatarType avatar_type = 13;
 }
 
 message KFMJONPFIMJ {
@@ -17098,7 +17098,7 @@ message KCOKAFGAKGF {
 }
 
 message HDNALOAECOB {
-	enum EEOLCCFMJFF = 3;
+	GGMLOIDBIBC EEOLCCFMJFF = 3;
 	ItemList ADKJIIANOOM = 10;
 	uint32 KKHCGIBNEED = 15;
 }
@@ -17107,12 +17107,12 @@ message IFCBABINJID {
 	bool CEOBDAFELDP = 15;
 	uint32 KKHCGIBNEED = 1;
 	uint32 AAHILCBEFAD = 12;
-	enum status = 6;
+	EKHNDMBIDHH status = 6;
 	uint32 GLLHDKKCGPM = 4;
 }
 
 message OHMPDCECOIB {
-	enum EEOLCCFMJFF = 13;
+	AILCFBABHIN EEOLCCFMJFF = 13;
 }
 
 message MPHEHCNLLBC {
@@ -17149,8 +17149,8 @@ message OOOJKGDMFOK {
 }
 
 message OHBCINICBHP {
-	enum FGPDKJPAKNC = 1;
-	enum HKOOAJAOJFJ = 9;
+	MEMCBKNIBAJ FGPDKJPAKNC = 1;
+	DAADHEDHJNH HKOOAJAOJFJ = 9;
 	uint32 HHMPIBMIHJA = 2;
 	uint32 OCKLJIFBFIN = 6;
 	repeated OOOJKGDMFOK DBKFLOBAMAE = 4;
@@ -17240,7 +17240,7 @@ message ECLOFJDAGGK {
 }
 
 message MHIKPMGOGMP {
-	enum MCEJAINEAIE = 4;
+	DAADHEDHJNH MCEJAINEAIE = 4;
 	uint32 HHMPIBMIHJA = 8;
 }
 
@@ -17277,7 +17277,7 @@ message MGBHAOKFAAM {
 
 message TreasureDungeonRecordData {
 	uint32 source_grid_id = 9;
-	enum type = 15;
+	HOIAHNPBDOB type = 15;
 	uint32 param_1 = 5;
 	uint32 target_grid_id = 2;
 	uint32 param_2 = 7;
@@ -17421,7 +17421,7 @@ message COCDOHHCKNN {
 }
 
 message ABNIFJLPPPI {
-	enum avatar_type = 4;
+	AvatarType avatar_type = 4;
 	uint32 avatar_id = 6;
 }
 
@@ -17447,12 +17447,12 @@ message IFGPBFNPOMD {
 
 message Tutorial {
 	uint32 id = 6;
-	enum status = 4;
+	TutorialStatus status = 4;
 }
 
 message TutorialGuide {
 	uint32 id = 12;
-	enum status = 5;
+	TutorialStatus status = 5;
 }
 
 message FLLKDMGJBGH {
