@@ -1,12 +1,16 @@
-const { getAvatarSlotTypeEnums } = require('./protocol/index');
+const express = require('express');
+const loadProtos = require('./protocol');
+const dispatchRoutes = require('./dispatch');
 
-async function main() {
-    try {
-        const enums = await getAvatarSlotTypeEnums();
-        console.log(enums);
-    } catch (err) {
-        console.error('Error fetching enums:', err);
-    }
-}
+const app = express();
+const PORT = 21000;
 
-main();
+loadProtos().then(() => {
+    app.use(dispatchRoutes);
+    
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+    });
+}).catch(error => {
+    console.error('Failed to load protobufs:', error);
+});
