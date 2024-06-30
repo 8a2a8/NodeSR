@@ -1,0 +1,28 @@
+{
+  "name": "nodesr",
+  "version": "0.1.0",
+  "description": "SR x NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "sr": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reinfrcd/NodeSR.git"
+  },
+  "author": "Rein",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/reinfrcd/NodeSR/issues"
+  },
+  "homepage": "https://github.com/reinfrcd/NodeSR#readme",
+  "dependencies": {
+    "bignumber": "^1.1.0",
+    "chalk": "^5.3.0",
+    "enet": "^0.2.9",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "pino": "^9.2.0",
+    "protobufjs": "^7.3.2"
+  }
+}
