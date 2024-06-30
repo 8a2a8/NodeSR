@@ -1,1 +1,1 @@
-console.log("work in progress, still working on protos lol"); 
+console.log("work in progress, you can check out the protos if you're interested");
